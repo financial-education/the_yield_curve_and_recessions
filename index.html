@@ -75,26 +75,35 @@
 	  <p align="left">However, what if today's 10-year rate is 5%, and todays 5-year rate is 7%?</p>
 	  <ul>
 	    <li>Then the expected 5-year rate in 5 years is 3.04%</li>
-	    <li>In this case we expect future interest rates to be lower tan present interest rates.</li>
-	    <li>This is consistent with slowing economic growth (and recession).</li>
+	    <li>In this case we expect future interest rates to be lower than present interest rates---the <span class="fragment highlight-red">yield curve is inverted</span>.</li>
+	    <li>This is consistent with <span class="fragment highlight-red">slowing economic growth</span> (and recession).</li>
 	  </ul>
 	</section>
 
+	<section>
+	  <p align="left">On the next slide you can enter today's 5 and 10-year rate, and see the expected 5-year rate in 5 years.</p>
+	</section>
 	
-	
-    <!-- 	<section>	 -->
-    <!-- 	  <h3>Interactive Application</h3> -->
+    	<section>
+	  Enter 10-Year Rate (in %):	  <input type="text" placeholder="3%" id="input1" /> <br>
+	  Enter 5-Year Rate (in %):         <input type="text" placeholder="8%" id="input2" /> <br>
+    <button onclick="myJsFunction()">Calculate</button>
 
-    <!-- <button onclick="myJsFunction()">Enter 1 Year Yield (in %):</button>	  <input type="text" placeholder="2" id="input1" /> -->
+    <script src="src/pe1.js"></script>
 
-    <!-- <script src="src/pe1.js"></script> -->
-
-    <!-- <p id="out1"></p> -->
-
-
-    <!-- 	</section>	 -->
+    <p> 5-Year Rate in 5 Years: <span id="out1"></span>%</p>
+    	</section>
 
 	<section>
+	  <h3>The Historical Record</h3>
+	  <p align="left">It makes theoretical sense that an inverted yield curve indicates a future recession, but does the historical record agree?</p>
+	  <ul>
+	    <li>On the next slide is an interactive plot showing the difference in yield over time, and recessions shaded in pink.</li>
+	    <li>The difference in yields do tend to collapse prior to a recessions, and so the historical record tends to agree.</li>
+	  </ul>
+	</section>
+
+<section data-background-image="./code_image.jpg">
 <div class="stretch">
 <iframe src="https://micfm.shinyapps.io/term_structure_app1/" height="100%" width="100%"></iframe>
 	    </div>
